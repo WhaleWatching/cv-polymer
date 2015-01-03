@@ -1,12 +1,29 @@
 link(rel="import" href="/static/components/polymer/polymer.html")
 script(src="/static/cv.js")
 
-polymer-element(name="cv-input" attributes="local_string")
+polymer-element(name="cv-serv-global")
+
+polymer-element(name="cv-input")
   template
+    cv-serv-global(id="serv-global")
     p
       label(for="input") Input: 
-      input(id="input" value="{{local_string}}")
+      input(id="input" value="{{global.data}}")
 
-polymer-element(name="cv-show" attributes="local_string")
+polymer-element(name="cv-show")
   template
-    p The global is: {{local_string}}
+    cv-serv-global(id="serv-global")
+    p
+      | The global is: 
+      span(style="color:{{global.data}}") {{global.data}}
+
+polymer-element(name="cv-awesome")
+  template
+    cv-serv-global(id="serv-global")
+    .background(style="background-color: {{global.data}}")
+      h1 Hi, &lt;polymer-element >. You're awesome
+  style.
+    :host {
+      font-family: 'Lato';
+      color: white;
+    }
