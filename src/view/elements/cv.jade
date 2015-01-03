@@ -1,0 +1,12 @@
+link(rel="import" href="/static/components/polymer/polymer.html")
+script(src="/static/cv.js")
+
+polymer-element(name="cv-input" attributes="local_string")
+  template
+    p
+      label(for="input") Input: 
+      input(id="input" value="{{local_string}}")
+
+polymer-element(name="cv-show" attributes="local_string")
+  template
+    p The global is: {{local_string}}

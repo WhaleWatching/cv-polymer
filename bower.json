@@ -1,0 +1,30 @@
+{
+  "name": "cv-polymer",
+  "version": "0.0.0",
+  "authors": [
+    "Edward Cheng"
+  ],
+  "description": "CV of Edward Cheng",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "cv",
+    "edwardcheng",
+    "polymer",
+    "html6",
+    "shadowdom"
+  ],
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2",
+    "lato": "~0.2.2"
+  }
+}
