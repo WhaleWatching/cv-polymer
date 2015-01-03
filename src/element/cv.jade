@@ -1,5 +1,9 @@
+doctype html
 link(rel="import" href="/static/components/polymer/polymer.html")
-script(src="/static/cv.js")
+// smoosh 
+link(rel="stylesheet" href="cv.css" inline)
+script(src="cv.js" inline)
+// endsmoosh 
 
 polymer-element(name="cv-serv-global")
 
@@ -20,10 +24,5 @@ polymer-element(name="cv-show")
 polymer-element(name="cv-awesome")
   template
     cv-serv-global(id="serv-global")
-    .background(style="background-color: {{global.data}}")
-      h1 Hi, &lt;polymer-element >. You're awesome
-  style.
-    :host {
-      font-family: 'Lato';
-      color: white;
-    }
+    .background(style="background-color: {{global.data}}" horizontal center layout)
+      h1(flex) Hi, &lt;polymer-element >. You're awesome

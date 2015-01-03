@@ -1,0 +1,13 @@
+cv-awesome /deep/ .background {
+  height: 100%;
+}
+cv-awesome /deep/ h1 {
+  font-family: 'Lato';
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN2Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsVUFBVztFQUNULFlBQUE7O0FBRUYsVUFBVztFQUNULGFBQWEsTUFBYjtFQUNBLFlBQUE7RUFDQSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUEiLCJmaWxlIjoiY3YuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiY3YtYXdlc29tZSAvZGVlcC8gLmJhY2tncm91bmQge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5jdi1hd2Vzb21lIC9kZWVwLyBoMSB7XG4gIGZvbnQtZmFtaWx5OiAnTGF0byc7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luOiAwO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiAyMDA7XG4gIGZvbnQtc2l6ZTogMzBweDtcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
