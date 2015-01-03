@@ -3,8 +3,8 @@
 // Under GPLv2
 
 var
-  path_source = 'src',
-  path_dest = 'public',
+  path_source = './src',
+  path_dest = './',
   env = 'dev';
 
 var
