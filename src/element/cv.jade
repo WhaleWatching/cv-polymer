@@ -1,28 +1,25 @@
 doctype html
 link(rel="import" href="../static/components/polymer/polymer.html")
+link(rel="import" href="../static/components/core-component-page/core-component-page.html")
 // smoosh 
 link(rel="stylesheet" href="cv.css" inline)
 script(src="cv.js" inline)
 // endsmoosh 
 
-polymer-element(name="cv-serv-global")
+polymer-element(name="cv-global" hidden)
 
-polymer-element(name="cv-input")
+polymer-element(name="cv-side")
   template
-    cv-serv-global(id="serv-global")
-    p
-      label(for="input") Input: 
-      input(id="input" value="{{global.data}}")
 
-polymer-element(name="cv-show")
+polymer-element(name="cv-content")
   template
-    cv-serv-global(id="serv-global")
-    p
-      | The global is: 
-      span(style="color:{{global.data}}") {{global.data}}
+    cv-global(id="cvGlobal")
+    template(if="{{$.cvGlobal.global.cv_data}}")
+      p author: {{$.cvGlobal.global.cv_data.source.author}}
 
-polymer-element(name="cv-awesome")
+polymer-element(name="cv-polymer")
   template
-    cv-serv-global(id="serv-global")
-    .background(style="background-color: {{global.data}}" horizontal center layout)
-      h1(flex) Hi, &lt;polymer-element >. You're awesome
+    core-ajax(id="cvSource" url="/cv-data-example.json" handleAs="json")
+    cv-global(id="cvGlobal")
+    cv-side(id="cvSide")
+    cv-content(id="cvContent")

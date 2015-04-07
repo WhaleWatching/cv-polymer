@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.2",
-    "lato": "~0.2.2"
+    "polymer": "Polymer/polymer#~0.5.5",
+    "lato": "~0.2.3"
   }
 }

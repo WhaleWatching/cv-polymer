@@ -1,11 +1,18 @@
-cv-awesome /deep/ .background {
-  height: 100vh;
+cv-polymer,
+cv-polymer /deep/ * {
+  box-sizing: border-box;
 }
-cv-awesome /deep/ h1 {
-  font-family: 'Lato';
-  color: white;
-  margin: 0;
-  text-align: center;
-  font-weight: 200;
-  font-size: 30px;
+
+cv-polymer,
+cv-polymer /deep/ cv-side,
+cv-polymer /deep/ cv-content {
+  display: block;
+}
+
+cv-polymer /deep/ cv-side {
+}
+
+cv-polymer /deep/ cv-content {
+  width: 100vw;
+  height: 100vh;
 }

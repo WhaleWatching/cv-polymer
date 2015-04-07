@@ -19,6 +19,7 @@ var
   uglify = require('gulp-uglify'),
   filter = require('gulp-filter'),
   smoosher = require('gulp-smoosher'),
+  debug = require('gulp-debug'),
   del = require('del');
 
 gulp.task('style', function () {

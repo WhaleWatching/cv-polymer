@@ -1,13 +1,15 @@
-cv-awesome /deep/ .background {
+cv-polymer,
+cv-polymer /deep/ * {
+  box-sizing: border-box;
+}
+cv-polymer,
+cv-polymer /deep/ cv-side,
+cv-polymer /deep/ cv-content {
+  display: block;
+}
+cv-polymer /deep/ cv-content {
+  width: 100vw;
   height: 100vh;
 }
-cv-awesome /deep/ h1 {
-  font-family: 'Lato';
-  color: white;
-  margin: 0;
-  text-align: center;
-  font-weight: 200;
-  font-size: 30px;
-}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN2Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsVUFBVztFQUNULGFBQUE7O0FBRUYsVUFBVztFQUNULGFBQWEsTUFBYjtFQUNBLFlBQUE7RUFDQSxTQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUEiLCJmaWxlIjoiY3YuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiY3YtYXdlc29tZSAvZGVlcC8gLmJhY2tncm91bmQge1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuY3YtYXdlc29tZSAvZGVlcC8gaDEge1xuICBmb250LWZhbWlseTogJ0xhdG8nO1xuICBjb2xvcjogd2hpdGU7XG4gIG1hcmdpbjogMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogMjAwO1xuICBmb250LXNpemU6IDMwcHg7XG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN2Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxVQUFXO0VBQ1Qsc0JBQUE7O0FBR0Y7QUFDQSxVQUFXO0FBQ1gsVUFBVztFQUNULGNBQUE7O0FBTUYsVUFBVztFQUNULFlBQUE7RUFDQSxhQUFBIiwiZmlsZSI6ImN2LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImN2LXBvbHltZXIsXG5jdi1wb2x5bWVyIC9kZWVwLyAqIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuY3YtcG9seW1lcixcbmN2LXBvbHltZXIgL2RlZXAvIGN2LXNpZGUsXG5jdi1wb2x5bWVyIC9kZWVwLyBjdi1jb250ZW50IHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbmN2LXBvbHltZXIgL2RlZXAvIGN2LXNpZGUge1xufVxuXG5jdi1wb2x5bWVyIC9kZWVwLyBjdi1jb250ZW50IHtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */
